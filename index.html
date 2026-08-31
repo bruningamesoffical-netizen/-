@@ -7,7 +7,6 @@
   <title>𝑩𝒓𝒖𝒏𝒊𝒏𝒃𝒍𝒐𝒙𝒚𝒀𝑻☆ | Links</title>
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -47,7 +46,7 @@
       opacity: .45;
 
       pointer-events: none;
-      z-index: -2;
+      z-index: -1;
     }
 
     .container {
@@ -57,11 +56,9 @@
       text-align: center;
     }
 
-    /* FOTO DE PERFIL */
+    /* FOTO DO CANAL */
 
     .profile {
-      position: relative;
-
       width: 150px;
       height: 150px;
 
@@ -100,7 +97,6 @@
     }
 
     @keyframes profileFloat {
-
       0%, 100% {
         transform: translateY(0);
       }
@@ -108,31 +104,6 @@
       50% {
         transform: translateY(-8px);
       }
-
-    }
-
-    /* DECORAÇÃO */
-
-    .decoration {
-      margin: 25px auto 15px;
-
-      font-size: 27px;
-
-      letter-spacing: 8px;
-
-      animation: decorationFloat 3s ease-in-out infinite;
-    }
-
-    @keyframes decorationFloat {
-
-      0%, 100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-5px);
-      }
-
     }
 
     /* NOME */
@@ -141,7 +112,6 @@
       margin-top: 22px;
 
       font-size: 32px;
-
       font-weight: 800;
 
       color: #12608d;
@@ -153,7 +123,7 @@
       word-break: break-word;
     }
 
-    /* @ DO CANAL */
+    /* @ */
 
     .username {
       margin-top: 6px;
@@ -186,7 +156,6 @@
     }
 
     @keyframes heartBeat {
-
       0%, 100% {
         transform: scale(1);
       }
@@ -194,7 +163,28 @@
       50% {
         transform: scale(1.25);
       }
+    }
 
+    /* DECORAÇÃO */
+
+    .decoration {
+      margin: 20px auto 15px;
+
+      font-size: 27px;
+
+      letter-spacing: 8px;
+
+      animation: decorationFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes decorationFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
     }
 
     /* BOTÕES */
@@ -250,7 +240,6 @@
     /* BRILHO */
 
     .link::before {
-
       content: "";
 
       position: absolute;
@@ -279,7 +268,6 @@
     }
 
     .link:hover {
-
       transform:
         translateY(-5px)
         scale(1.02);
@@ -292,7 +280,6 @@
     /* BOTÃO PRINCIPAL */
 
     .featured {
-
       border-color: #74d3ff;
 
       background:
@@ -310,7 +297,6 @@
     /* ÍCONES */
 
     .icon {
-
       width: 45px;
       height: 45px;
 
@@ -336,12 +322,17 @@
 
       box-shadow:
         0 4px 10px rgba(80,170,210,.12);
+
+      transition: transform .3s ease;
+    }
+
+    .link:hover .icon {
+      transform: scale(1.15) rotate(-5deg);
     }
 
     /* TEXTO */
 
     .link-text {
-
       flex: 1;
 
       text-align: left;
@@ -350,7 +341,6 @@
     }
 
     .link-title {
-
       font-size: 17px;
 
       font-weight: bold;
@@ -359,7 +349,6 @@
     }
 
     .link-subtitle {
-
       margin-top: 4px;
 
       font-size: 12px;
@@ -370,7 +359,6 @@
     /* SETA */
 
     .arrow {
-
       font-size: 25px;
 
       color: #72b9d7;
@@ -379,16 +367,14 @@
     }
 
     .link:hover .arrow {
-
       transform: translateX(5px);
 
       color: #258bbb;
     }
 
-    /* RODAPÉ */
+    /* FINAL */
 
     .section-title {
-
       margin: 32px 0 14px;
 
       color: #6394ab;
@@ -401,7 +387,6 @@
     }
 
     footer {
-
       margin-top: 20px;
 
       color: #82a6b8;
@@ -412,7 +397,6 @@
     /* CELULAR */
 
     @media (max-width: 400px) {
-
       h1 {
         font-size: 25px;
       }
@@ -425,25 +409,21 @@
       .link {
         min-height: 64px;
       }
-
     }
-
   </style>
 </head>
-
 
 <body>
 
   <main class="container">
-
 
     <!-- FOTO DO CANAL -->
 
     <div class="profile">
 
       <img
-        src="logo.jpg"
-        alt="Logo do canal 𝑩𝒓𝒖𝒏𝒊𝒏𝒃𝒍𝒐𝒙𝒚𝒀𝑻☆"
+        src="20260830174432.png"
+        alt="Logo do canal"
       >
 
     </div>
@@ -466,17 +446,10 @@
     <!-- DESCRIÇÃO -->
 
     <p class="description">
-
       🎮 Conteúdo gamer, Roblox, edits e muito mais!
-
       <br>
-
       Bem-vindo ao meu cantinho azul!
-
-      <span class="heart">
-        ♥
-      </span>
-
+      <span class="heart">♥</span>
     </p>
 
 
@@ -619,7 +592,6 @@
 
       </a>
 
-
     </div>
 
 
@@ -631,13 +603,10 @@
 
 
     <footer>
-
       Feito com
       <span class="heart">♥</span>
       para a comunidade
-
     </footer>
-
 
   </main>
 
